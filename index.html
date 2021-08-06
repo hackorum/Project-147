@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color: skyblue">
+    <a-assets>
+      <a-asset-item src="./white_painted_wooden_chair/scene.gltf" id="chair"></a-asset-item>
+    </a-assets>
+    <a-camera position="0 5 12"></a-camera>
+    <a-plane
+      src="https://images.unsplash.com/photo-1495578942200-c5f5d2137def?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHdhbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+      position="0 2.7 -0.6" width="7.4" height="5"></a-plane>
+    <a-plane src="https://picsum.photos/200/100" position="0 2.7 -0.5" width="4" height="2"></a-plane>
+    <a-plane src="https://5.imimg.com/data5/QF/BD/XJ/SELLER-14005510/outdoor-balcony-tiles-500x500.jpg"
+      position="0 -0.2 0.5" rotation="-90 0 0" width="8" height="5"></a-plane>
+    <a-cylinder position="0 0.75 1.5" radius="0.5" height="1.5" color="silver"
+      src="https://images.unsplash.com/photo-1525034687081-c702010cb70d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29vZCUyMHRleHR1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+    </a-cylinder>
+    <a-plane
+      src="https://images.unsplash.com/photo-1525034687081-c702010cb70d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29vZCUyMHRleHR1cmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+      position="0 1.51 1.5" rotation="-90 0 0" width="5" height="3"></a-plane>
+    <a-entity gltf-model="#chair" position="-3.5 0 1" scale="2 2 2" rotation="0 90 0"></a-entity>
+    <a-entity gltf-model="#chair" position="3.5 0 1" scale="2 2 2" rotation="0 -90 0"></a-entity>
+  </a-scene>
+</body>
+
+</html>
